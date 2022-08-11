@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+
+<html> 
+  <head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8"> 
+    <title>俳句っぽいど読み上げ</title> 
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="../javascripts/sample.js"></script> 
+  </head>
+
+  <body>
+    <header>
+        <a href="/touku" class="header-logo">別の句を作る</a>
+    </header>
+    <div class="table-body">
+        <% haiku.forEach((haiku) => { %>
+            <div class="haiku-data">
+              <p class="haiku-column"><%= haiku.haiku %></p>
+              <p class="haigou-column"><%= haiku.haigou %></p>
+            </div>
+        <% }) %>
+        </div>
+  </body>
