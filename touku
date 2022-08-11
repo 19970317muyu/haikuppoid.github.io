@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+
+<html> 
+  <head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8"> 
+    <title>俳句っぽいど投句</title> 
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="../javascripts/sample.js"></script> 
+  </head>
+
+ <body>
+    <header>
+        <a href="/" class="header-logo">口絵に戻る</a>
+    </header>
+ <div class="touku-form-wrapper">
+    <div class="touku-main">
+
+  <form action="/create" method="post">
+
+    <p class="form-label-haiku">ここに俳句を打ち込んでください</p>
+    <input class="form-haiku" type="text" name="haikuHaiku" maxlength="20">
+
+    <p class="form-label-haigou">ここに俳号を打ち込んでください</p>
+    <input class="form-haigou" type="text" name="haikuHaigou">
+
+    <input class="submit" type="submit" value="俳句っぽくする">
+  </form>
+</div>
+ </div> 
+ </body>
+<html>
